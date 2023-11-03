@@ -108,6 +108,99 @@ Fig. 7. Filled by Interpolated Values
 
 &nbsp;리샘플링(Resampling)을 진행하여 데이터를 증대 또는 감소시킬 수 있다. 본 연구에서는 24시간으로 나누어진 데이터를 평균값으로 대체하여 일 단위로 끊어서 학습을 진행하였다.
 
+#### 정상성(Stationarity)
+
+&nbsp;정상성(Stationarity)은 데이터의 확률적인 성질들이 시간의 흐름에 따라 변화하지 않는다는 것을 의미한다. 이는 평균, 공분산, 분산 등이 시간에 의존하지 않는다는 것을 의미한다. 우리가 사용하는 데이터가 과연 비정상성을 갖고 있는지 확인해야 추세와 계절성을 가진 시계열 데이터로 분석할 의미를 갖는다. 정상성은 시각적, 기초 통계량, 통계적 검정을 통해서 확인할 수 있다. 그 중 Augmented Dickey - Fuller (ADF) 검정은 단위근 검정으로 비정상성을 확인할 수 있다.
+
+* 귀무가설 H<sub>0</sub>: 시계열은 고정되어 있지 않다.
+* 대립가설 H<sub>1</sub>: 시계열은 정지 상태이다.
+
+&nbsp;귀무가설을 기각하는 방법은 두 가지로 P-value를 통한 방법과 ADF 통계량을 통한 방법이 있다. P-value를 통한 방법은 P-value > 유의수준(Default: 0.05)이면 귀무가설을 채택한다. P-value <= 유의수준(Default: 0.05)이면 귀무가설을 기각한다. ADF 통계량을 통한 방법은 ADF Statistics > Critical Value이면 귀무가설을 채택한다. ADF Statistics < Critical Value이면 귀무가설을 기각한다.
+
+![Figure 8](./assets/Figure-8.png)
+
+<p align="center">
+Fig. 8. P-values & ADF Statistics of Volume Flow Rate
+</p>
+
+&nbsp;Fig. 8에서 체적유량의 ADF Statistics의 값은 -5.088으로 Critical Values 5%에 해당하는 -2.871보다 큰 값이 도출되었다. 따라서 체적유량의 시계열 자료는 고정되어 있지 않다.
+
+[Figure 9](./assets/Figure-9.png)
+
+<p align="center">
+Fig. 9. P-values & ADF Statistics of Precipitation
+</p>
+
+&nbsp;Fig. 9에서 강수량의 ADF Statistics의 값은 -11.797으로 Critical Values 5%에 해당하는 -2.871보다 큰 값이 도출되었다. 따라서 강수량 시계열 자료는 고정되어 있지 않다.
+
+[Figure 10](./assets/Figure-10.png)
+
+<p align="center">
+Fig. 10. P-values & ADF Statistics of Water Stage
+</p>
+
+&nbsp;Fig. 10에서 수위의 ADF Statistics의 값은 -8.188으로 Critical Values 5%에 해당하는 -2.871보다 큰 값이 도출되었다. 따라서 수위 시계열 자료는 고정되어 있지 않다.
+
+&nbsp;다음과 같이 값이 특정 변수들의 시계열이 고정되어 있지 않음을 보여준다. 이를 해결하는 방법으로 데이터를 변환하여 적용을 해야하는데, 일반적인 두 가지 방법은 로그 또는 제곱근을 적용하거나 차분하여 시계열을 고정할 수 있다. 본 연구에서는 차분하여 시계열을 고정하는 방법을 사용하였다. 이러한 차분은 Eq. 1의 1차 차분과 Eq. 2의 2차 차분으로 나뉜다.
+
+&nbsp; 1차 차분은 다음 식을 적용한다.
+
+$$z_{i} = y_{i} - y_{i-1}$$
+
+<p align="center">
+Eq. 1. 1st Difference Equation
+</p>
+
+Eq. 1의 1차 차분을 각 자료에 적용한 결과 그래프는 Fig. 11 ~ 13과 같다.
+
+![Figure 11](./assets/Figure-11.png)
+
+<p align="center">
+Fig. 11. First-order Differentiated Volume Flow Rate
+</p>
+
+![Figure 12](./assets/Figure-12.png)
+
+<p align="center">
+Fig. 12. First-order Differentiated Precipitation
+</p>
+
+![Figure 13](./assets/Figure-13.png)
+
+<p align="center">
+Fig. 13. First-order Differentiated Water Stage
+</p>
+
+&nbsp; 2차 차분은 다음 식을 적용한다.
+
+$$z_{i} = (y_{i} - y_{i-1}) - (y_{i-1} - y_{i-2})$$
+
+<p align="center">
+Eq. 2. 2nd Difference Equation
+</p>
+
+Eq. 2의 2차 차분을 각 자료에 적용한 결과 그래프는 Fig. 14 ~ 16과 같다.
+
+![Figure 14](./assets/Figure-14.png)
+
+<p align="center">
+Fig. 14. Second-order Differentiated Volume Flow Rate
+</p>
+
+![Figure 15](./assets/Figure-15.png)
+
+<p align="center">
+Fig. 15. Second-order Differentiated Precipitation
+</p>
+
+![Figure 16](./assets/Figure-16.png)
+
+<p align="center">
+Fig. 16. Second-order Differentiated Water Stage
+</p>
+
+그 결과, 1차 차분을 적용한 결과 그래프에서 더 적은 정상성을 가짐을 확인하였고, 이에 2차 차분이 아닌, 1차 차분으로 전처리를 진행하였다.
+
 ## Applications
 
 ### :construction: Architectures
