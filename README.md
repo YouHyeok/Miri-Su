@@ -49,6 +49,25 @@ Fig. 2. Geographical Location of Gabcheon and Enlarged Photograph of the Mannyeo
 
 ### Data Preprocessing
 
+## Applications
+
+### User Interface (UI)
+
+![UI](./assets/UI.png)
+
+<p align="center">
+Fig. x. User Interface
+</p>
+
+
+### Demo
+
+![Demo](./assets/Demo.png)
+
+<p align="center">
+Fig. x. Demo Alerts
+</p>
+
 
 ## References
 
