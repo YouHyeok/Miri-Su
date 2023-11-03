@@ -104,6 +104,10 @@ Fig. 7. Filled by Interpolated Values
 
 &nbsp;Fig. 7은 보간법을 적용하여 결측치를 채워넣은 모습이다.
 
+#### 리샘플링(Resampling)
+
+&nbsp;리샘플링(Resampling)을 진행하여 데이터를 증대 또는 감소시킬 수 있다. 본 연구에서는 24시간으로 나누어진 데이터를 평균값으로 대체하여 일 단위로 끊어서 학습을 진행하였다.
+
 ## Applications
 
 ### :construction: Architectures
