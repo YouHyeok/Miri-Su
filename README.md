@@ -224,7 +224,7 @@ Table. 1. Train and Test Datasets
 |      02:00:00     |           2.84          |          0.0          |         1.08         |
 | $\cdots$ | $\cdots$ | $\cdots$ | $\cdots$ |
 
-&nbsp; Table. 1에서 확인할 수 있듯이, 데이터셋(Datasets)은 기본적으로 다변량(Multivariate)의 시계열(Time Series) 데이터로, 체적유량과 강수량의 두 특징 데이터로부터 정답인 수위 데이터로 구성되어 있다. 예측 모델로의 데이터 주입이 용이하도록 기존에 분리되어 있던 세 개의 개별적인 데이터들을 하나의 자료 형태로 취합하였다.
+&nbsp; Table. 1에서 확인할 수 있듯이, 데이터셋(Datasets)은 기본적으로 다변량(Multivariate)의 시계열(Time Series) 데이터로, 체적유량(Volume Flow Rate)과 강수량(Precipitation)의 두 특징 데이터와 정답인 수위(Water Stage) 데이터로 구성되어 있다. 예측 모델로의 데이터 주입이 용이하도록 기존에 분리되어 있던 세 개의 개별적인 데이터들을 하나의 자료 형태로 취합하였다.
 
 ## Applications
 
