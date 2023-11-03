@@ -201,6 +201,18 @@ Fig. 16. Second-order Differentiated Water Stage
 
 그 결과, 1차 차분을 적용한 결과 그래프에서 더 적은 정상성을 가짐을 확인하였고, 이에 2차 차분이 아닌, 1차 차분으로 전처리를 진행하였다.
 
+#### 히트맵(Heat Map)
+
+&nbsp;수집한 유량 및 강수량 데이터와 수위 간의 상관관계를 확인하기 위하여 상관관계(Correlations)에 대한 행렬(Matrix)을 생성한 다음, 이를 히트 맵(Heat Map) 형태로 그 관계를 도식화하였으며, 그 결과는 다음 Fig. 17과 같았다.
+
+![Figure 17](./assets/Figure-17.png)
+
+<p align="center">
+Fig. 17. Visualization of Heat Maps for Correlations between Features and Labels
+</p>
+
+&nbsp; Fig. 17로부터 히트 맵의 대각성분들은 모두 동일한 특징들에 대한 상관관계이므로 1이 도출되었으며, 체적유량(Volume Flow Rate)과 수위(Water Stage), 강수량(Precipitation)과 수위(Water Stage)간에 각각 0.84, 0.87로 특징(Features)과 정답(Labels)들 간에 비교적 선형의 상관관계를 보임을 확인하였다.
+
 ## Applications
 
 ### :construction: Architectures
