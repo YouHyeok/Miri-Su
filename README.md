@@ -51,6 +51,9 @@ Fig. 2. Geographical Location of Gabcheon and Enlarged Photograph of the Mannyeo
 
 ## Applications
 
+### :construction: Architectures
+
+
 ### User Interface (UI)
 
 ![UI](./assets/UI.png)
