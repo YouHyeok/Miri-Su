@@ -125,7 +125,7 @@ Fig. 8. P-values & ADF Statistics of Volume Flow Rate
 
 &nbsp;Fig. 8에서 체적유량의 ADF Statistics의 값은 -5.088으로 Critical Values 5%에 해당하는 -2.871보다 큰 값이 도출되었다. 따라서 체적유량의 시계열 자료는 고정되어 있지 않다.
 
-[Figure 9](./assets/Figure-9.png)
+![Figure 9](./assets/Figure-9.png)
 
 <p align="center">
 Fig. 9. P-values & ADF Statistics of Precipitation
@@ -133,7 +133,7 @@ Fig. 9. P-values & ADF Statistics of Precipitation
 
 &nbsp;Fig. 9에서 강수량의 ADF Statistics의 값은 -11.797으로 Critical Values 5%에 해당하는 -2.871보다 큰 값이 도출되었다. 따라서 강수량 시계열 자료는 고정되어 있지 않다.
 
-[Figure 10](./assets/Figure-10.png)
+![Figure 10](./assets/Figure-10.png)
 
 <p align="center">
 Fig. 10. P-values & ADF Statistics of Water Stage
