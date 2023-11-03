@@ -213,6 +213,19 @@ Fig. 17. Visualization of Heat Maps for Correlations between Features and Labels
 
 &nbsp; Fig. 17로부터 히트 맵의 대각성분들은 모두 동일한 특징들에 대한 상관관계이므로 1이 도출되었으며, 체적유량(Volume Flow Rate)과 수위(Water Stage), 강수량(Precipitation)과 수위(Water Stage)간에 각각 0.84, 0.87로 특징(Features)과 정답(Labels)들 간에 비교적 선형의 상관관계를 보임을 확인하였다.
 
+#### 훈련(Train) 및 테스트(Test) 데이터셋(Datasets)
+
+Table. 1. Train and Test Datasets
+
+| Date (2017.01.01) | Volume Flow Rate (m<sup>3</sup>/s) | Precipitation (mm/hr) | Water Stage (m) (=y) |
+|:-----------------:|:-----------------------:|:---------------------:|:--------------------:|
+|      00:00:00     |           2.68          |          0.0          |         1.07         |
+|      01:00:00     |           2.84          |          0.0          |         1.08         |
+|      02:00:00     |           2.84          |          0.0          |         1.08         |
+| $\cdots$ | $\cdots$ | $\cdots$ | $\cdots$ |
+
+&nbsp; Table. 1에서 확인할 수 있듯이, 데이터셋(Datasets)은 기본적으로 다변량(Multivariate)의 시계열(Time Series) 데이터로, 체적유량과 강수량의 두 특징 데이터로부터 정답인 수위 데이터로 구성되어 있다. 예측 모델로의 데이터 주입이 용이하도록 기존에 분리되어 있던 세 개의 개별적인 데이터들을 하나의 자료 형태로 취합하였다.
+
 ## Applications
 
 ### :construction: Architectures
