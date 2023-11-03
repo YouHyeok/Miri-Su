@@ -217,7 +217,7 @@ Fig. 17. Visualization of Heat Maps for Correlations between Features and Labels
 
 Table. 1. Train and Test Datasets
 
-| Date (2017.01.01) | Volume Flow Rate (m<sup>3</sup>/s) | Precipitation (mm/hr) | Water Stage (m) (=y) |
+| Date <br/>(2017.01.01) | Volume Flow Rate <br/> (m<sup>3</sup>/s) | Precipitation <br/> (mm/hr) | Water Stage <br/> (m) <br/> (=y) |
 |:-----------------:|:-----------------------:|:---------------------:|:--------------------:|
 |      00:00:00     |           2.68          |          0.0          |         1.07         |
 |      01:00:00     |           2.84          |          0.0          |         1.08         |
