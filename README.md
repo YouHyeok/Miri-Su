@@ -85,6 +85,25 @@ Fig. 5. Visualization of the Distribution of Volume Flow Rate in Gapcheon from 2
 
 ### Data Preprocessing
 
+#### 결측치(Missing Values) 제거
+
+![Figure 6](./assets/Figure-6.png)
+
+<p align="center">
+Fig. 6. Missing Values of Core Features
+</p>
+
+&nbsp;Fig. 6과 같이 2018년과 2019년에 일부 데이터가 없는 것을 확인할 수 있다. 따라서 결측치를 채우기 위해서 보간된 값으로 채워넣는 보간법을 사용하였다.
+
+
+![Figure 7](./assets/Figure-7.png)
+
+<p align="center">
+Fig. 7. Filled by Interpolated Values
+</p>
+
+&nbsp;Fig. 7은 보간법을 적용하여 결측치를 채워넣은 모습이다.
+
 ## Applications
 
 ### :construction: Architectures
