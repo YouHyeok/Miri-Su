@@ -47,6 +47,18 @@ Fig. 2. Geographical Location of Gabcheon and Enlarged Photograph of the Mannyeo
 
 ### Data Analysis
 
+#### Precipitation
+
+![Figure 3](./assets/Figure-3.png)
+
+<p align="center">
+Fig. 3. Visualization of the Distribution of Precipitation in Gapcheon from 2017 to 2021
+</p>
+
+&nbsp;Fig. 3은 2017년부터 2021년까지의 갑천의 강수량의 분포를 시각화한 그래프이다. 이 그래프에서 파란점들은 각 시간당 강수량을 나타내며, 이를 통해 연도별 기후 변화와 강수량 분포를 파악할 수 있다.
+
+&nbsp;Fig. 3에서 볼 수 있듯이, 모든 년도에서 3분기(여름~가을)에 시간당 강수량이 높은 경향을 보이며, 이는 갑천 지역의 기후 특성을 확인할 수 있다. 특히 2018년과 2020년에는 각각 70mm/hour와 58mm/hour로 3분기에 높은 시간당 강수량을 기록했다. 이러한 값들은 다른 년도와 비교해도 상당히 높은 수준에 해당하며, 두 해의 3분기는 기후적으로 비교적 습한 조건을 가지던 시기로 해석된다.
+
 ### Data Preprocessing
 
 ## Applications
@@ -74,6 +86,25 @@ Fig. x. Demo Alerts
 
 ## References
 
+Kim, D., Han, H., Wang, W., & Kim, H. S. (2022). Improvement of Deep Learning Models for River Water Level Prediction Using Complex Network Method. Water, 14(3), 466.
+
+Kim, D., Lee, K., Hwang-Bo, J. G., Kim, H. S., & Kim, S. (2022). Development of the Method for Flood Water Level Forecasting and Flood Damage Warning Using an AI-based Model. Journal of the Korean Society of Hazard Mitigation, 22(4), 145–156.
+
+Kyungpook National University, Jung, S., Lee, D., Kyungpook National University, Lee, K., & Kyungpook National University. (2017). Prediction of River Water Level Using Deep-Learning Open Library. Korean Society of Hazard Mitigation, 18(1), 1–11.
+
+Osman, S., Aziz, N. A., Husaif, N., Sidek, L. M., Shakirah, A., Hanum, F., & Basri, H. (2018). Application of Stochastic Flood Forecasting Model Using Regression Method for Kelantan Catchment. MATEC Web of Conferences, 203, 07001.
+
+Taylor, S. J., & Letham, B. (2017). Forecasting at scale[Preprint]. PeerJ Preprints.
+
+Costabile, P., Costanzo, C., & Macchione, F. (2012). Comparative analysis of overland flow models using finite volume schemes. Journal of Hydroinformatics, 14(1), 122–135.
+
+Costabile, P., Costanzo, C., & Macchione, F. (2013). A storm event watershed model for surface runoff based on 2D fully dynamic wave equations: A WATERSHED RUNOFF MODEL BASED ON 2D FULLY DYNAMIC WAVE EQUATIONS. Hydrological Processes, 27(4), 554–569.
+
+Le, Ho, Lee, & Jung. (2019). Application of Long Short-Term Memory (LSTM) Neural Network for Flood Forecasting. Water, 11(7), 1387.
+
+Borah, D. K. (2011). Hydrologic procedures of storm event watershed models: A comprehensive review and comparison. Hydrological Processes, 25(22), 3472–3489.
+
+## Comments
 
 > 본 글과 저장소(Repository)의 저작권은 김종혁, 이성지, 김민중, 나종열에게 있습니다. 무단 도용, 배포, 복제를 금합니다.
 
