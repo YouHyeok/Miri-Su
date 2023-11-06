@@ -252,6 +252,18 @@ $$g(t) = \frac{C}{1 + exp(-k(t-m))}$$
 
 &nbsp; 여기서 $C$는 한계점을 나타내는 수용력, $k$는 성장률, $t$와 $m$은 각각 시간과 오프셋(Offset) 파라미터를 의미한다.
 
+#### 계절성(Seasonality)
+
+&nbsp; 주기적 변화를 반영하는 함수로 반복되는 패턴(Pattern)에 특징을 반영한다.
+
+<p align="center">
+Eq. 5. Seasonality Approximation Fourier Function
+</p>
+
+$$s(t) = \sum_{i=1}^{N}(a_{n}cos(\frac{2\pi{nt}}{P}) + b_{n}sin(\frac{2\pi{nt}}{P}))$$
+
+&nbsp; 여기서 $P$는 시계열 모델에서 기대하는 정규주기로 기간(Periods)을 의미한다.
+
 ## Applications
 
 ### :construction: Architectures
