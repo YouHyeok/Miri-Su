@@ -226,6 +226,21 @@ Table. 1. Train and Test Datasets
 
 &nbsp; Table. 1에서 확인할 수 있듯이, 데이터셋(Datasets)은 기본적으로 다변량(Multivariate)의 시계열(Time Series) 데이터로, 체적유량(Volume Flow Rate)과 강수량(Precipitation)의 두 특징 데이터와 정답인 수위(Water Stage) 데이터로 구성되어 있다. 예측 모델로의 데이터 주입이 용이하도록 기존에 분리되어 있던 세 개의 개별적인 데이터들을 하나의 자료 형태로 취합하였다.
 
+## Build and Train Models
+
+### Prophet Model
+
+&nbsp; 수위 예측을 위한 다변량 기계학습 모델로서 페이스북(Facebook)에서 공개한 시계열 예측 모델인 Prophet을 선정하였다. 본 모델은 일반화된 가산 모델(GAM)(Hastie & Tibshirani 1987)과 유사하며, 회귀모델임에도 불구하고 시간을 구성요소로 하는 선형과 비선형 회귀 모델 기능을 수행할 수 있다. GAM의 형태를 갖춤으로 새로운 구성요소를 추가하고, 변형하기 쉽다. ARIMA 모델과 달리 측정값에 일정한 간격을 유지할 필요가 없으며, 누락된 값을 보간할 필요가 없다. 학습의 속도도 뛰어나 더 쉽게 모델을 사용할 수 있다.
+
+<p align="center">
+Eq. 3. Prophet Model
+</p>
+
+$$y(t) = g(t) + s(t) + h(t) + \epsilon_{t}$$
+
+&nbsp; Prophet 모형은 Eq. 3와 같은 함수를 가지며, 추세(Trend), 계절성(Seasonality), 휴일과 이벤트(Holidays and Events)의 3가지 주요 요소로 구성된다. 
+
+
 ## Applications
 
 ### :construction: Architectures
