@@ -240,6 +240,17 @@ $$y(t) = g(t) + s(t) + h(t) + \epsilon_{t}$$
 
 &nbsp; Prophet 모형은 Eq. 3와 같은 함수를 가지며, 추세(Trend), 계절성(Seasonality), 휴일과 이벤트(Holidays and Events)의 3가지 주요 요소로 구성된다. 
 
+#### 추세(Trend)
+
+&nbsp; 비주기적 변화를 모델링하는 추세 함수로 기본적으로 성장성을 반영한다.
+
+<p align="center">
+Eq. 4. Piecewise Logistic Growth Model
+</p>
+
+$$g(t) = \frac{C}{1 + exp(-k(t-m))}$$
+
+&nbsp; 여기서 $C$는 한계점을 나타내는 수용력, $k$는 성장률, $t$와 $m$은 각각 시간과 오프셋(Offset) 파라미터를 의미한다.
 
 ## Applications
 
