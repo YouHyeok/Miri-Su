@@ -311,6 +311,6 @@ Borah, D. K. (2011). Hydrologic procedures of storm event watershed models: A co
 
 > 본 글과 저장소(Repository)의 저작권은 김종혁, 이성지, 김민중, 나종열에게 있습니다. 무단 도용, 배포, 복제를 금합니다.
 
-> 또한, 앱의 디자인 및 소스코드는 박유상, 고태완에게 있습니다. 무단 도용, 배포, 복제를 금합니다.
+> 또한, 앱의 디자인 및 소스코드는 박유상, 고태완, 김종혁에게 있습니다. 무단 도용, 배포, 복제를 금합니다.
 
 > 필요하신 자료나 정보가 있으신 경우, 본 논문의 교신저자(Corresponding Author)인 나종열의 [이메일](najyeol99@gmail.com)로 연락주시기 바랍니다.
