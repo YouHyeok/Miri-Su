@@ -21,7 +21,7 @@
 
 &nbsp;본 연구의 구성요소 및 그 순서도(Flow Chart)는 다음 Fig. 1과 같다.
 
-![Figure 1](./assets/Figure-1.png)
+![Figure 1](./assets/images/Figure-1.png)
 
 <p align="center">
 Fig. 1. Flow Chart for Building Flood Prediction Method
@@ -35,7 +35,7 @@ Fig. 1. Flow Chart for Building Flood Prediction Method
 
 &nbsp;본 연구에서는 대전광역시 갑천의 홍수예방 및 재발방지를 위하여 만년교를 주 연구대상으로 선정하였다. 기계학습(Machine Learning) 모델 구축에 앞서, 수위를 예측할 수 있는 특징(Feature)에 해당하는 자료와 정답(Labels)인 수위자료의 수집을 위하여 금강 홍수통제소에서 제공하는 2017년 1월부터 2022년 12월까지 총 6년의 유량 및 강수량, 수위 데이터를 활용하였다.
 
-![Figure 2](./assets/Figure-2.png)
+![Figure 2](./assets/images/Figure-2.png)
 
 <p align="center">
 Fig. 2. Geographical Location of Gabcheon and Enlarged Photograph of the Mannyeon Bridge
@@ -49,7 +49,7 @@ Fig. 2. Geographical Location of Gabcheon and Enlarged Photograph of the Mannyeo
 
 #### 강수량(Precipitation)
 
-![Figure 3](./assets/Figure-3.png)
+![Figure 3](./assets/images/Figure-3.png)
 
 <p align="center">
 Fig. 3. Visualization of the Distribution of Precipitation in Gapcheon from 2017 to 2021
@@ -61,7 +61,7 @@ Fig. 3. Visualization of the Distribution of Precipitation in Gapcheon from 2017
 
 #### 수위(Water Stage)
 
-![Figure 4](./assets/Figure-4.png)
+![Figure 4](./assets/images/Figure-4.png)
 
 <p align="center">
 Fig. 4. Visualization of the Distribution of Water Stage in Gapcheon from 2017.01 to 2021.12
@@ -73,7 +73,7 @@ Fig. 4. Visualization of the Distribution of Water Stage in Gapcheon from 2017.0
 
 #### 체적유량(Volume Flow Rate)
 
-![Figure 5](./assets/Figure-5.png)
+![Figure 5](./assets/images/Figure-5.png)
 
 <p align="center">
 Fig. 5. Visualization of the Distribution of Volume Flow Rate in Gapcheon from 2017.01 to 2021.12
@@ -87,7 +87,7 @@ Fig. 5. Visualization of the Distribution of Volume Flow Rate in Gapcheon from 2
 
 #### 결측치(Missing Values) 제거
 
-![Figure 6](./assets/Figure-6.png)
+![Figure 6](./assets/images/Figure-6.png)
 
 <p align="center">
 Fig. 6. Missing Values of Core Features
@@ -96,7 +96,7 @@ Fig. 6. Missing Values of Core Features
 &nbsp;Fig. 6과 같이 2018년과 2019년에 일부 데이터가 없는 것을 확인할 수 있다. 따라서 결측치를 채우기 위해서 보간된 값으로 채워넣는 보간법을 사용하였다.
 
 
-![Figure 7](./assets/Figure-7.png)
+![Figure 7](./assets/images/Figure-7.png)
 
 <p align="center">
 Fig. 7. Filled by Interpolated Values
@@ -117,7 +117,7 @@ Fig. 7. Filled by Interpolated Values
 
 &nbsp;귀무가설을 기각하는 방법은 두 가지로 P-value를 통한 방법과 ADF 통계량을 통한 방법이 있다. P-value를 통한 방법은 P-value > 유의수준(Default: 0.05)이면 귀무가설을 채택한다. P-value <= 유의수준(Default: 0.05)이면 귀무가설을 기각한다. ADF 통계량을 통한 방법은 ADF Statistics > Critical Value이면 귀무가설을 채택한다. ADF Statistics < Critical Value이면 귀무가설을 기각한다.
 
-![Figure 8](./assets/Figure-8.png)
+![Figure 8](./assets/images/Figure-8.png)
 
 <p align="center">
 Fig. 8. P-values & ADF Statistics of Volume Flow Rate
@@ -125,7 +125,7 @@ Fig. 8. P-values & ADF Statistics of Volume Flow Rate
 
 &nbsp;Fig. 8에서 체적유량의 ADF Statistics의 값은 -5.088으로 Critical Values 5%에 해당하는 -2.871보다 큰 값이 도출되었다. 따라서 체적유량의 시계열 자료는 고정되어 있지 않다.
 
-![Figure 9](./assets/Figure-9.png)
+![Figure 9](./assets/images/Figure-9.png)
 
 <p align="center">
 Fig. 9. P-values & ADF Statistics of Precipitation
@@ -133,7 +133,7 @@ Fig. 9. P-values & ADF Statistics of Precipitation
 
 &nbsp;Fig. 9에서 강수량의 ADF Statistics의 값은 -11.797으로 Critical Values 5%에 해당하는 -2.871보다 큰 값이 도출되었다. 따라서 강수량 시계열 자료는 고정되어 있지 않다.
 
-![Figure 10](./assets/Figure-10.png)
+![Figure 10](./assets/images/Figure-10.png)
 
 <p align="center">
 Fig. 10. P-values & ADF Statistics of Water Stage
@@ -153,19 +153,19 @@ Eq. 1. 1st Difference Equation
 
 Eq. 1의 1차 차분을 각 자료에 적용한 결과 그래프는 Fig. 11 ~ 13과 같다.
 
-![Figure 11](./assets/Figure-11.png)
+![Figure 11](./assets/images/Figure-11.png)
 
 <p align="center">
 Fig. 11. First-order Differentiated Volume Flow Rate
 </p>
 
-![Figure 12](./assets/Figure-12.png)
+![Figure 12](./assets/images/Figure-12.png)
 
 <p align="center">
 Fig. 12. First-order Differentiated Precipitation
 </p>
 
-![Figure 13](./assets/Figure-13.png)
+![Figure 13](./assets/images/Figure-13.png)
 
 <p align="center">
 Fig. 13. First-order Differentiated Water Stage
@@ -181,19 +181,19 @@ Eq. 2. 2nd Difference Equation
 
 Eq. 2의 2차 차분을 각 자료에 적용한 결과 그래프는 Fig. 14 ~ 16과 같다.
 
-![Figure 14](./assets/Figure-14.png)
+![Figure 14](./assets/images/Figure-14.png)
 
 <p align="center">
 Fig. 14. Second-order Differentiated Volume Flow Rate
 </p>
 
-![Figure 15](./assets/Figure-15.png)
+![Figure 15](./assets/images/Figure-15.png)
 
 <p align="center">
 Fig. 15. Second-order Differentiated Precipitation
 </p>
 
-![Figure 16](./assets/Figure-16.png)
+![Figure 16](./assets/images/Figure-16.png)
 
 <p align="center">
 Fig. 16. Second-order Differentiated Water Stage
@@ -205,7 +205,7 @@ Fig. 16. Second-order Differentiated Water Stage
 
 &nbsp;수집한 유량 및 강수량 데이터와 수위 간의 상관관계를 확인하기 위하여 상관관계(Correlations)에 대한 행렬(Matrix)을 생성한 다음, 이를 히트 맵(Heat Map) 형태로 그 관계를 도식화하였으며, 그 결과는 다음 Fig. 17과 같았다.
 
-![Figure 17](./assets/Figure-17.png)
+![Figure 17](./assets/images/Figure-17.png)
 
 <p align="center">
 Fig. 17. Visualization of Heat Maps for Correlations between Features and Labels
@@ -271,7 +271,7 @@ $$s(t) = \sum_{i=1}^{N}(a_{n}cos(\frac{2\pi{nt}}{P}) + b_{n}sin(\frac{2\pi{nt}}{
 
 ### User Interface (UI)
 
-![UI](./assets/UI.png)
+![UI](./assets/images/UI.png)
 
 <p align="center">
 Fig. x. User Interface
@@ -280,7 +280,7 @@ Fig. x. User Interface
 
 ### Demo
 
-![Demo](./assets/Demo.png)
+![Demo](./assets/images/Demo.png)
 
 <p align="center">
 Fig. x. Demo Alerts
